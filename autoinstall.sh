@@ -25,7 +25,7 @@ if [ $USER = "root" ] ; then
 		
 		./Seedbox.sh
 		
-		rm autoinstall.sh
+		rm autoinstall.sh && rm autoinstall.sh.1
 	else
 		echo ""
 		echo " You are not connected to internet please check your connection !"
