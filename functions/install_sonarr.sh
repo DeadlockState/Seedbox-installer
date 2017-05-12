@@ -11,7 +11,7 @@ install_sonarr () {
 	
 	echo "deb http://apt.sonarr.tv/ master main" | tee /etc/apt/sources.list.d/sonarr.list > /dev/null 2>&1
 	
-	echo "Running apt-get install libmono-cil-dev mediainfo nzbdrone..."
+	echo "Running apt-get install libmono-cil-dev mediainfo nzbdrone ..."
 	
 	apt-get update -y > /dev/null 2>&1
 	
