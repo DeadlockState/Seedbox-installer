@@ -11,13 +11,13 @@ install_sonarr () {
 	
 	echo "deb http://apt.sonarr.tv/ master main" | tee /etc/apt/sources.list.d/sonarr.list > /dev/null 2>&1
 	
-	echo "Running apt-get install libmono-cil-dev mediainfo ..."
+	echo "Running apt-get install libmono-cil-dev mediainfo nzbdrone..."
 	
 	apt-get update -y > /dev/null 2>&1
 	
 	apt-get install -y --allow-unauthenticated libmono-cil-dev mediainfo > /dev/null 2>&1
 	
-	apt-get install -y --allow-unauthenticated nzbdrone
+	apt-get install -y --allow-unauthenticated nzbdrone > /dev/null 2>&1
 	
 	cd /lib/systemd/system/
 	
