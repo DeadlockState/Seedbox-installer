@@ -5,7 +5,7 @@ if [ $USER = "root" ] ; then
 		
 		mkdir Seedbox-installer
 		
-		git clone https://github.com/Punk--Rock/LetsEncrypt-Tools.git Seedbox-installer/ > /dev/null 2>&1
+		git clone https://github.com/Punk--Rock/Seedbox-installer.git Seedbox-installer/ > /dev/null 2>&1
 		
 		mv Seedbox-installer/* .
 		
