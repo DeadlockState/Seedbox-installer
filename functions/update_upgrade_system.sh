@@ -6,7 +6,11 @@ update_upgrade_system () {
 	
 	echo "Running apt-get update && apt-get upgrade && apt-get dist-upgrade ..."
 	
-	apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y > /dev/null 2>&1
+	apt-get update -y > /dev/null 2>&1
+	
+	apt-get upgrade -y > /dev/null 2>&1
+	
+	apt-get dist-upgrade -y > /dev/null 2>&1
 	
 	apt-get install -y curl git-core unzip > /dev/null 2>&1
 	
