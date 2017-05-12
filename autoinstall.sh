@@ -21,7 +21,7 @@ if [ $USER = "root" ] ; then
 		
 		dir=`echo "$PWD" | sed -e "s/\/root/~/g"`
 		
-		echo $USER"@"$(hostname)":"$dir"# ./letsencrypt_updater.sh"
+		echo $USER"@"$(hostname)":"$dir"# ./Seedbox.sh"
 		
 		./Seedbox.sh
 		
