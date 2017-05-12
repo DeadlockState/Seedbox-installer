@@ -37,6 +37,10 @@ chmod +x autoinstall.sh
 ./autoinstall.sh
 ```
 
+## More
+
+If you want the same thing with Docker and Docker Compose you can check [this repository](https://github.com/bilyboy785/seedbox-compose)
+
 ## Contact me
 
 [![Twitter](https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-24.png)](https://twitter.com/Punk__R0ck) [@Punk__R0ck](https://twitter.com/Punk__R0ck)
