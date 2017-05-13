@@ -15,8 +15,6 @@ if [ $USER = "root" ] ; then
 		
 		chmod +x Seedbox.sh
 		
-		chmod +x functions/*.sh
-		
 		clear
 		
 		dir=`echo "$PWD" | sed -e "s/\/root/~/g"`
