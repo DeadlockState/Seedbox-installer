@@ -3,7 +3,9 @@ install_rtorrent_rutorrent () {
 	echo " "$step". Installing rTorrent/ruTorrent (with Nginx)..."
 	echo ""
 
-	apt-get install -y automake libcppunit-dev libtool build-essential pkg-config libssl-dev libcurl4-openssl-dev libsigc++-2.0-dev libncurses5-dev screen subversion nginx apache2-utils php7.0 php7.0-fpm php7.0-cli php7.0-curl php-geoip php7.0-xmlrpc unrar rar zip ffmpeg buildtorrent mediainfo python-libtorrent rtorrent
+	echo "Running apt-get install automake libcppunit-dev libtool build-essential pkg-config libssl-dev libcurl4-openssl-dev libsigc++-2.0-dev libncurses5-dev screen subversion nginx apache2-utils php7.0 php7.0-fpm php7.0-cli php7.0-curl php-geoip php7.0-xmlrpc unrar rar zip ffmpeg buildtorrent mediainfo python-libtorrent rtorrent ..."
+	
+	apt-get install -y automake libcppunit-dev libtool build-essential pkg-config libssl-dev libcurl4-openssl-dev libsigc++-2.0-dev libncurses5-dev screen subversion nginx apache2-utils php7.0 php7.0-fpm php7.0-cli php7.0-curl php-geoip php7.0-xmlrpc unrar rar zip ffmpeg buildtorrent mediainfo python-libtorrent rtorrent > /dev/null 2>&1
  
 	cd /var/www/html/
 		 
