@@ -152,44 +152,46 @@ configure_rtorrent_service () {
 		
 	echo "#!/usr/bin/env bash
 
+# Dépendance : screen, killall et rtorrent
 ### BEGIN INIT INFO
-# Provides: rtorrent
-# Required-Start: \$syslog $network
-# Required-Stop: \$syslog $network
-# Default-Start: 2 3 4 5
-# Default-Stop: 0 1 6
+# Provides:          <username>-rtorrent
+# Required-Start:    \$syslog \$network
+# Required-Stop:     \$syslog \$network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
 # Short-Description: Start daemon at boot time
-# Description: Start-Stop rtorrent user session
+# Description:       Start-Stop rtorrent user session
 ### END INIT INFO
 
+## Début configuration ##
 user=\""$rutorrent_user"\"
+## Fin configuration ##
 
-rt_start {
-	su --command=\"screen -dmS \${user} rtorrent\" \"\${user}\"
+rt_start() {
+    su --command=\"screen -dmS \${user}-rtorrent rtorrent\" \"\${user}\"
 }
 
-rt_stop {
-	killall --user \"\${user}\" screen
+rt_stop() {
+    killall --user \"\${user}\" screen
 }
 
 case \"\$1\" in
-	start) echo \"Starting rRorrent...\"; rt_start
-	;;
-	stop) echo \"Stopping rTorrent...\"; rt_stop
-	;;
-	restart) echo \"Restarting rTorrent...\"; rt_stop; sleep 1; rt_start
-	;;
-	*) echo \"Usage: \$0 {start|stop|restart}\"; exit 1
-	;;
-
+start) echo \"Starting rtorrent...\"; rt_start
+    ;;
+stop) echo \"Stopping rtorrent...\"; rt_stop
+    ;;
+restart) echo \"Restart rtorrent...\"; rt_stop; sleep 1; rt_start
+    ;;
+*) echo \"Usage: \$0 {start|stop|restart}\"; exit 1
+    ;;
 esac
-exit 0" > rtorrent
+exit 0" > $rutorrent_user-rtorrent
 		
-	chmod +x rtorrent
+	chmod +x $rutorrent_user-rtorrent
 		
-	update-rc.d rtorrent defaults
+	update-rc.d $rutorrent_user-rtorrent defaults
 		
-	service rtorrent start
+	service $rutorrent_user-rtorrent start
 	
 	if [ "$install_searchers" = "y" ] ; then
 		service sickrage restart
