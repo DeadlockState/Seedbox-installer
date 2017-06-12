@@ -7,14 +7,20 @@ install_rtorrent_rutorrent () {
 	
 	apt-get install -y automake libcppunit-dev libtool build-essential pkg-config libssl-dev libcurl4-openssl-dev libsigc++-2.0-dev libncurses5-dev screen subversion nginx apache2-utils php7.0 php7.0-fpm php7.0-cli php7.0-curl php-geoip php7.0-xmlrpc unrar rar zip ffmpeg buildtorrent mediainfo python-libtorrent rtorrent > /dev/null 2>&1
  
-	cd /var/www/html/
-		 
-	git clone https://github.com/Novik/ruTorrent.git rutorrent
-		 
+	if [ -d "/var/www/html/" ] ; then
+		cd /var/www/html/
+	else
+		mkdir /var/www/html/
+	fi
+	
+	echo "Running git clone https://github.com/Novik/ruTorrent.git ..."
+	
+	git clone https://github.com/Novik/ruTorrent.git rutorrent --quiet
+	
 	cd rutorrent/plugins/
-		 
-	git clone https://github.com/xombiemp/rutorrentMobile.git mobile
-		
+	
+	git clone https://github.com/xombiemp/rutorrentMobile.git mobile --quiet
+	
 	step=$((step+1))
 }
 
