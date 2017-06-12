@@ -1,4 +1,4 @@
-# Seedbox installer [![Build Status](https://travis-ci.org/Punk--Rock/Seedbox-installer.svg?branch=master)](https://travis-ci.org/Punk--Rock/Seedbox-installer)
+# Seedbox-installer [![Build Status](https://travis-ci.org/Punk--Rock/Seedbox-installer.svg?branch=master)](https://travis-ci.org/Punk--Rock/Seedbox-installer)
 
 ## About
 
@@ -10,8 +10,9 @@ Preparing and installing a fully seedbox server (Plex Media Server + Sonarr/Rada
 
 Tested on 
 
-* [x] Ubuntu 16.04.2 LTS Xenial Xerus and above
-* [ ] Debian 8.7.1 Jessie and above
+* [x] Ubuntu Server 16.04.2 LTS Xenial Xerus and above
+* [ ] Debian 8.8.0 Jessie
+* [x] Debian Stretch RC3
 
 ## Services
 
