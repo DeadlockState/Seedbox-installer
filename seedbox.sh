@@ -17,8 +17,8 @@ fi
 
 . functions/functions.sh
 
-green="\033[0;32m"
-blue="\033[0;36m"
+green="\033[1;32m"
+blue="\033[1;34m"
 orange="\033[0;33m"
 red="\033[1;31m"
 nc="\033[0m"
