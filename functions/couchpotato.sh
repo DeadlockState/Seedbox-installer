@@ -17,8 +17,10 @@ install_couchpotato () {
 	pip install --upgrade pip > /dev/null 2>&1
 	
 	cd /opt/
+	
+	echo "Running git clone https://github.com/CouchPotato/CouchPotatoServer.git ..."
  
-	git clone https://github.com/CouchPotato/CouchPotatoServer.git
+	git clone https://github.com/CouchPotato/CouchPotatoServer.git --quiet
 }
 
 configure_couchpotato () {
