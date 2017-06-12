@@ -30,4 +30,6 @@ install_sickrage () {
 	update-rc.d sickrage defaults
 	 
 	service sickrage start
+	
+	step=$((step+1))
 }
