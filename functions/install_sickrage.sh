@@ -7,9 +7,9 @@ install_sickrage () {
 	
 	apt-get install -y unrar-free openssl libssl-dev python2.7 > /dev/null 2>&1
 	
-	sudo addgroup --system sickrage
+	addgroup --system sickrage
 	
-	sudo adduser --disabled-password --system --home /var/lib/sickrage --gecos "SickRage" --ingroup sickrage sickrage
+	adduser --disabled-password --system --home /var/lib/sickrage --gecos "SickRage" --ingroup sickrage sickrage
 	
 	mkdir /opt/sickrage
 	
