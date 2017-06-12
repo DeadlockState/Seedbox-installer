@@ -21,6 +21,8 @@ install_couchpotato () {
 	echo "Running git clone https://github.com/CouchPotato/CouchPotatoServer.git ..."
  
 	git clone https://github.com/CouchPotato/CouchPotatoServer.git --quiet
+	
+	step=$((step+1))
 }
 
 configure_couchpotato () {
@@ -69,4 +71,6 @@ configure_couchpotato () {
 	wget https://raw.githubusercontent.com/Punk--Rock/couchpotato.providers.french/master/torrent9/main.py --quiet
 	
 	service couchpotato restart
+	
+	step=$((step+1))
 }
