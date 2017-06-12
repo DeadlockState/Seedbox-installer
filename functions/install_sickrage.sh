@@ -15,7 +15,9 @@ install_sickrage () {
 	
 	chown sickrage:sickrage /opt/sickrage
 	
-	git clone https://github.com/SickRage/SickRage.git /opt/sickrage
+	echo "Running git clone https://github.com/SickRage/SickRage.git ..."
+	
+	git clone https://github.com/SickRage/SickRage.git /opt/sickrage --quiet
 	
 	cp /opt/sickrage/runscripts/init.ubuntu /etc/init.d/sickrage
 	
