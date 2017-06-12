@@ -168,22 +168,22 @@ user=\""$rutorrent_user"\"
 ## Fin configuration ##
 
 rt_start() {
-    su --command=\"screen -dmS \${user}-rtorrent rtorrent\" \"\${user}\"
+	su --command=\"screen -dmS \${user}-rtorrent rtorrent\" \"\${user}\"
 }
 
 rt_stop() {
-    killall --user \"\${user}\" screen
+	killall --user \"\${user}\" screen
 }
 
 case \"\$1\" in
-start) echo \"Starting rtorrent...\"; rt_start
-    ;;
-stop) echo \"Stopping rtorrent...\"; rt_stop
-    ;;
-restart) echo \"Restart rtorrent...\"; rt_stop; sleep 1; rt_start
-    ;;
-*) echo \"Usage: \$0 {start|stop|restart}\"; exit 1
-    ;;
+	start) echo \"Starting rtorrent...\"; rt_start
+	;;
+	stop) echo \"Stopping rtorrent...\"; rt_stop
+	;;
+	restart) echo \"Restart rtorrent...\"; rt_stop; sleep 1; rt_start
+	;;
+	*) echo \"Usage: \$0 {start|stop|restart}\"; exit 1
+	;;
 esac
 exit 0" > $rutorrent_user-rtorrent
 		
