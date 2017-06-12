@@ -1,4 +1,4 @@
 language: bash
 
 script:
-  - bash Seedbox.sh
+  - bash seedbox.sh
