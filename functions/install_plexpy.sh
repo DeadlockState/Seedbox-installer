@@ -10,6 +10,8 @@ install_plexpy () {
 	
 	cd /opt/
 	
+	echo "Running git clone https://github.com/JonnyWong16/plexpy.git ..."
+	
 	git clone https://github.com/JonnyWong16/plexpy.git --quiet
 	
 	adduser --system --group --disabled-login plexpy --shell /bin/nologin --quiet
