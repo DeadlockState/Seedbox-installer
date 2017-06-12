@@ -55,15 +55,15 @@ configure_nginx_rutorrent () {
 	read -p " What will be the username to access to ruTorrent ? [rutorrent] " rutorrent_user_temp
 	echo ""
 		
-	if [ -z $rutorrent_user_temp ] ; then
+	if [ -z "$rutorrent_user_temp" ] ; then
 		rutorrent_user="rutorrent"
 	else
-		rutorrent_user=$(echo "$rutorrent_user_TEMP" | tr -s '[:upper:]' '[:lower:]')
+		rutorrent_user=$(echo "$rutorrent_user_temp" | tr -s '[:upper:]' '[:lower:]')
 	fi
 		
 	read -p " and the password ? [rutorrent] " rutorrent_password
 	
-	if [ -z $rutorrent_password ] ; then
+	if [ -z "$rutorrent_password" ] ; then
 		rutorrent_password="rutorrent"
 	fi
 		
