@@ -6,11 +6,11 @@ install_radarr () {
 	
 	cd /opt/
 	
-	wget https://github.com/Radarr/Radarr/releases/download/v0.2.0.696/Radarr.develop.0.2.0.696.linux.tar.gz --quiet
+	wget https://github.com/Radarr/Radarr/releases/download/v0.2.0.778/Radarr.develop.0.2.0.778.linux.tar.gz --quiet
 	
-	tar -zxf Radarr.develop.0.2.0.696.linux.tar.gz
+	tar -zxf Radarr.develop.0.2.0.778.linux.tar.gz
 	
-	rm Radarr.develop.0.2.0.696.linux.tar.gz
+	rm Radarr.develop.0.2.0.778.linux.tar.gz
 	
 	cd /lib/systemd/system/
 	
