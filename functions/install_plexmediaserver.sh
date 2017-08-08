@@ -6,9 +6,23 @@ install_plexmediaserver () {
 
 	cd /tmp/
  
-	wget https://downloads.plex.tv/plex-media-server/1.5.6.3790-4613ce077/plexmediaserver_1.5.6.3790-4613ce077_amd64.deb --quiet
+	wget https://downloads.plex.tv/plex-media-server/1.7.5.4035-313f93718/plexmediaserver_1.7.5.4035-313f93718_amd64.deb --quiet
 	
-	dpkg -i plexmediaserver_1.5.6.3790-4613ce077_amd64.deb
+	# Little fix for containers/LXC running on Ubuntu Server
+	mv /sbin/udevadm /sbin/udevadm.bak
+	
+	touch /sbin/udevadm
+	
+	chmod +x /sbin/udevadm
+	# Little fix for containers/LXC running on Ubuntu Server
+	
+	dpkg -i plexmediaserver_1.7.5.4035-313f93718_amd64.deb
+	
+	# Little fix for containers/LXC running on Ubuntu Server
+	rm /sbin/udevadm
+	
+	mv /sbin/udevadm.bak /sbin/udevadm
+	# Little fix for containers/LXC running on Ubuntu Server
 	
 	step=$((step+1))
 }
