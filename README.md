@@ -11,8 +11,7 @@ Preparing and installing a fully seedbox server (Plex Media Server + Sonarr/Rada
 Tested on 
 
 * [x] Ubuntu Server 16.04.2 LTS Xenial Xerus and above
-* [ ] Debian 8.8.0 Jessie
-* [x] Debian Stretch RC3
+* [x] Debian 9.0.0 Stretch and above
 
 ## Services
 
