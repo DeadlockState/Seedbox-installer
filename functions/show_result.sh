@@ -5,7 +5,7 @@ show_result () {
 	echo ""
 	echo " That's okay !"
 	echo ""
-	echo " Plex Media Server : "${blue}"http://"$ip_address":32400/web/"${nc}
+	echo " Plex Media Server : "${blue}"http://"$ip_address":32400/web/index.html"${nc}
 	if [ "$install_searchers" = "y" ] ; then
 		echo " SickRage : "${blue}"http://"$ip_address":8081/home/"${nc}
 		echo " CouchPotato : "${blue}"http://"$ip_address":5050"${nc}
@@ -18,7 +18,7 @@ show_result () {
 	else
 		echo " Transmission : "${blue}"http://"$ip_address":9091/transmission/web/${nc}   (username/password : transmission)"
 	fi
-	echo " Jackett : "${blue}"http://"$ip_address":9117/Admin/Dashboard"${nc}
+	echo " Jackett : "${blue}"http://"$ip_address":9117/UI/Dashboard"${nc}
 	echo " PlexPy : "${blue}"http://"$ip_address":8181"${nc}
 	echo ""
 }
