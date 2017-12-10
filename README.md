@@ -1,4 +1,4 @@
-# Seedbox-installer [![Build Status](https://travis-ci.org/Punk--Rock/Seedbox-installer.svg?branch=master)](https://travis-ci.org/Punk--Rock/Seedbox-installer)
+# Seedbox installer [![Build Status](https://travis-ci.org/Punk--Rock/Seedbox-installer.svg?branch=master)](https://travis-ci.org/Punk--Rock/Seedbox-installer)
 
 ## About
 
@@ -17,14 +17,14 @@ Tested on
 
 Service                | Installation   | Version      | Port
 ---------------------- | -------------- | ------------ | -------
-Plex Media Server      | Installed      | [1.9.4.4325](https://www.plex.tv/downloads/)   | 32400
+Plex Media Server      | Installed      | [1.10.0.4523](https://www.plex.tv/downloads/)   | 32400
 Sonarr                 | Optional       | [latest](https://github.com/Sonarr/Sonarr/releases)       | 8989
 Radarr                 | Optional       | [0.2.0.870](https://github.com/Radarr/Radarr/releases)    | 7878
 SickRage               | Optional       | [latest](https://github.com/SickRage/SickRage/releases)       | 8081
 CouchPotato            | Optional       | [latest](https://github.com/CouchPotato/CouchPotatoServer/releases)       | 5050
 Transmission           | Optional       | [latest](https://transmissionbt.com/download/)       | 9091
 rTorrent + ruTorrent   | Optional       | [latest](https://github.com/Novik/ruTorrent/releases)       |
-Jackett                | Installed      | [0.8.339](https://github.com/Jackett/Jackett/releases)      | 9117
+Jackett                | Installed      | [0.8.500](https://github.com/Jackett/Jackett/releases)      | 9117
 PlexPy                 | Installed      | [latest](https://github.com/JonnyWong16/plexpy)       | 8181
 
 ## Installation
