@@ -9,5 +9,5 @@
 . functions/rtorrent_rutorrent.sh
 . functions/transmission.sh
 . functions/install_jackett.sh
-. functions/install_plexpy.sh
+. functions/install_tautulli.sh
 . functions/show_result.sh
