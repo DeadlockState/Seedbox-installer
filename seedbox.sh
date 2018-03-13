@@ -69,6 +69,6 @@ fi
 
 install_jackett
 		
-install_plexpy
+install_tautulli
 		
 show_result
