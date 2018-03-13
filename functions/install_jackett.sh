@@ -9,7 +9,7 @@ install_jackett () {
 	
 	cd /opt/
 	
-	wget https://github.com/Jackett/Jackett/releases/download/v0.8.500/Jackett.Binaries.Mono.tar.gz --quiet
+	wget https://github.com/Jackett/Jackett/releases/download/v0.8.749/Jackett.Binaries.Mono.tar.gz --quiet
 	
 	tar -zxf Jackett.Binaries.Mono.tar.gz
 	
