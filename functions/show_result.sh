@@ -19,6 +19,6 @@ show_result () {
 		echo " Transmission : "${blue}"http://"$ip_address":9091/transmission/web/${nc}   (username/password : transmission)"
 	fi
 	echo " Jackett : "${blue}"http://"$ip_address":9117/UI/Dashboard"${nc}
-	echo " PlexPy : "${blue}"http://"$ip_address":8181"${nc}
+	echo " Tautulli : "${blue}"http://"$ip_address":8181"${nc}
 	echo ""
 }
